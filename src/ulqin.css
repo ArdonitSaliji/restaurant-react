@@ -223,3 +223,9 @@ select option {
     display: inline-block;
   }
 }
+.map {
+  border: none;
+  display: flex;
+  margin-top: 1%;
+  justify-content: center;
+}

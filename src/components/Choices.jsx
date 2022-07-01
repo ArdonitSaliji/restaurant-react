@@ -3,7 +3,6 @@ import React from 'react'
 const Choices = () => {
   return (
     <div>
-      <hr />
       <div className='zgjedhjet'>
         <div className='foodbtn'>
           <h1>Ushqime</h1>

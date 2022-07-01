@@ -4,8 +4,6 @@ import Choices from './Choices'
 import Item from './Item'
 import allItems from './allItems'
 const Main = () => {
-  const titles = ['Pizza', 'Mishra', 'Pasta', 'Sallatë', 'Dessert']
-
   const items = allItems.map((item) => <Item key={item} image={item.img} price={item.price} title={item.title} desc={item.description} />)
   return (
     <div>
