@@ -1,4 +1,3 @@
-import './App.css'
 import { useState } from 'react'
 import Header from './components/Header'
 import Main from './components/Main'
@@ -16,6 +15,9 @@ function App() {
     <div>
       <Header data={showLoc} data2={showMenu} />
       {content}
+      <footer>
+        <h2>Copyright © Ulqin 2022</h2>
+      </footer>
     </div>
   )
 }

@@ -8,7 +8,6 @@ const Main = () => {
   return (
     <div>
       <Choices />
-
       <div className='container'>
         <div className='foods'>{items}</div>
         <div className='beverages'>
