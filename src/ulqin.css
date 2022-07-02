@@ -58,6 +58,7 @@ hr {
   box-shadow: 0 0 5px 0.1px black;
 }
 .container {
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,8 +73,8 @@ hr {
   flex-wrap: wrap;
 }
 .beverages {
-  display: none;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -188,12 +189,12 @@ hr {
 footer {
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   text-align: center;
   width: 100%;
   background-color: black;
-  height: 65px;
+  height: 55px;
 }
 footer h2 {
   color: white;

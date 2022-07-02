@@ -12,7 +12,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div style={{ position: 'relative' }}>
       <Header data={showLoc} data2={showMenu} />
       {content}
       <footer>
