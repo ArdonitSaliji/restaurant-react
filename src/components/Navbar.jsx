@@ -9,9 +9,10 @@ const Navbar = (props) => {
         </div>
         <i className='fa-solid fa-bars'></i>
         <div className='navItems'>
-          <a>Ballina</a>
-          <a onClick={props.data2}>Menu</a>
-          <a onClick={props.data}>Lokacioni</a>
+          <a onClick={props.showBallina}>Ballina</a>
+          <a onClick={props.showMenu}>Menu</a>
+          <a onClick={props.showLocation}>Lokacioni</a>
+          <a>Kontakti</a>
         </div>
       </div>
     </div>

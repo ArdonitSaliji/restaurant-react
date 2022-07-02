@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 const Header = (props) => {
   return (
     <div>
-      <Navbar data={props.data} data2={props.data2} />
+      <Navbar showMenu={props.showMenu} showLocation={props.showLocation} showBallina={props.showBallina} />
       <hr />
     </div>
   )

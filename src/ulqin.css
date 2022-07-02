@@ -3,6 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+.ballH {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+}
+.images {
+  display: flex;
+  justify-content: center;
+}
+.images img {
+  margin: 10px;
+  height: 500px;
+  width: auto;
+}
 body {
   height: 100vh;
   background-color: white;
