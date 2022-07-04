@@ -8,13 +8,11 @@ const Drinks = () => {
           <div className='item'>
             <h1>Pije Të Ftohta</h1>
             <img src='images/cdrinks.jpg' alt='' />
-
             <h3>Cmimi: 280 MKD</h3>
           </div>
           <div className='item'>
             <h1>Pije Të Ngrohta</h1>
             <img src='images/caffe.jpg' alt='' />
-
             <h3>Cmimi: 280 MKD</h3>
           </div>
         </div>
