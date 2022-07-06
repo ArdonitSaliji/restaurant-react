@@ -3,21 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.ballH {
-  display: flex;
-  justify-content: center;
-  height: 80px;
-  align-items: center;
-}
-.images {
-  display: flex;
-  justify-content: center;
-}
-.images img {
-  margin: 10px;
-  height: 500px;
-  width: auto;
-}
+
 body {
   height: 100vh;
   background-color: white;
@@ -229,17 +215,67 @@ select {
 select option {
   text-align: center;
 }
-.fa-bars {
+.bars {
   display: none;
-  font-size: 45px;
+  font-size: 40px;
   margin-top: 1%;
   margin-right: 4%;
 }
-@media screen and (max-width: 1020px) {
+.ballH {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+}
+.images {
+  height: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.images img {
+  margin: 10px;
+  height: 500px;
+  width: auto;
+}
+@media screen and (max-width: 1024px) {
   .navItems {
     display: none;
   }
-  .fa-bars {
+  .footer {
+    position: fixed;
+    bottom: 0;
+  }
+  .ulqinImg {
+    margin-left: -25px;
+  }
+  .ulqinImg h1 {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .ulqinImg img {
+    height: 200px;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .images {
+    margin: 0;
+    justify-content: center;
+    width: auto;
+    padding-bottom: 80px;
+  }
+  .images img {
+    width: auto;
+  }
+  .ballH {
+    text-align: center;
+    margin: 15px 0;
+  }
+  .bars {
     display: inline-block;
   }
 }
