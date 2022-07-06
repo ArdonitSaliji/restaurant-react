@@ -134,7 +134,9 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 110px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid black;
 }
 
 .navItems a {
@@ -150,7 +152,9 @@ hr {
 .navItems a:hover {
   background-color: brown;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 .ulqinImg {
   display: flex;
   align-items: center;
