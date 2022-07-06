@@ -28,6 +28,8 @@ hr {
 }
 .btns {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   height: 5rem;
 }
@@ -287,6 +289,9 @@ select option {
   width: auto;
 }
 @media screen and (max-width: 1024px) {
+  .btns {
+    margin: 15px 0;
+  }
   .navItems {
     display: none;
   }
