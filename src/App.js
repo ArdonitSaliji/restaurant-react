@@ -20,7 +20,7 @@ function App() {
       <Header showLocation={showLoc} showMenu={showMenu} showHome={showHome} />
       {content}
       <footer>
-        <h2>Copyright © Ulqin 2022</h2>
+        <h2>Copyright © Restaurant 2022</h2>
       </footer>
     </div>
   )

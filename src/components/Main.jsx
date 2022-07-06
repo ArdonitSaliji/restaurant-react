@@ -18,10 +18,10 @@ const Main = () => {
       <div>
         <div className='zgjedhjet'>
           <div onClick={showFood} className='foodbtn'>
-            <h1>Ushqime</h1>
+            <h1>Food</h1>
           </div>
           <div onClick={showDrinks} className='drinks'>
-            <h1>Pije</h1>
+            <h1>Drinks</h1>
           </div>
         </div>
         <Choices />
