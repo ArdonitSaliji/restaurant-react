@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import '../ulqin.css'
-import Choices from './Choices'
 import Item from './Item'
 import allItems from './allItems'
 import Drinks from './Drinks'
+import Choices from './Choices'
 const Main = () => {
   const items = allItems.map((item) => <Item key={item} image={item.img} price={item.price} title={item.title} desc={item.description} />)
   const [container, setContainer] = useState(items)
@@ -15,7 +15,17 @@ const Main = () => {
   }
   return (
     <div className='container'>
-      <Choices showDrinks={showDrinks} showFood={showFood} />
+      <div>
+        <div className='zgjedhjet'>
+          <div onClick={showFood} className='foodbtn'>
+            <h1>Ushqime</h1>
+          </div>
+          <div onClick={showDrinks} className='drinks'>
+            <h1>Pije</h1>
+          </div>
+        </div>
+        <Choices />
+      </div>
       <div className={container === items ? 'foods' : 'beverages'}>{container}</div>
     </div>
   )

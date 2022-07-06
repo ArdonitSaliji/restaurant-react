@@ -1,16 +1,23 @@
 import React from 'react'
 
-const Choices = (props) => {
+const Choices = () => {
   return (
-    <div>
-      <div className='zgjedhjet'>
-        <div onClick={props.showFood} className='foodbtn'>
-          <h1>Ushqime</h1>
-        </div>
-        <div onClick={props.showDrinks} className='drinks'>
-          <h1>Pije</h1>
-        </div>
-      </div>
+    <div className='btns'>
+      <button className='all'>
+        <p>All</p>
+      </button>
+      <button className='pizzaBtn'>
+        <p>Pizza</p>
+      </button>
+      <button className='pastaBtn'>
+        <p>Pasta</p>
+      </button>
+      <button className='meatBtn'>
+        <p>Meats</p>
+      </button>
+      <button className='dessertBtn'>
+        <p>Desserts</p>
+      </button>
     </div>
   )
 }
