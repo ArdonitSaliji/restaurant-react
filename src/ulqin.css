@@ -235,7 +235,7 @@ select option {
   justify-content: center;
 }
 .images img {
-  margin: 10px 0;
+  margin: 10px;
   height: 500px;
   width: auto;
 }
@@ -264,12 +264,15 @@ select option {
     flex-direction: column;
   }
   .images {
+    width: auto;
     margin: 0;
     justify-content: center;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
   .images img {
     width: auto;
+    height: 450px;
+    margin: 10px 0;
   }
   .ballH {
     text-align: center;
