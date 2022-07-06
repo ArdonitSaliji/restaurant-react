@@ -16,15 +16,61 @@ hr {
   justify-content: center;
   display: flex;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
   position: relative;
 }
 
 .zgjedhjet h1 {
   border: none;
   color: black;
-  width: 200px;
+  width: 9rem;
   padding: 8px 0;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+}
+.btns button {
+  border-radius: 4px;
+  font-size: 16px;
+  width: 6.5rem;
+  height: 1.9rem;
+  margin: 10px 10px 0;
+  background-color: rgb(0, 0, 24);
+  color: white;
+  border: none;
+}
+.btns p:hover {
+  backdrop-filter: blur(0);
+}
+.btns p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.9rem;
+  backdrop-filter: blur(2px);
+}
+.btns .all {
+  background-color: rgb(0, 0, 24);
+  color: white;
+  border: 1px solid rgb(0, 0, 24);
+}
+.pizzaBtn {
+  background-image: url('../public/images/margarita.jpg');
+  background-position: 50% 80%;
+}
+.pastaBtn {
+  background-image: url('../public/images/pasta.jpg');
+  background-position: 60% 60%;
+}
+.meatBtn {
+  background-image: url('../public/images/mishra.jpg');
+  background-position: 20% 60%;
+}
+.dessertBtn {
+  background-image: url('../public/images/OIP.jpg');
+  background-position: 20% 50%;
 }
 .foodbtn,
 .drinks {
@@ -33,6 +79,7 @@ hr {
   margin: 0 10px;
   cursor: pointer;
 }
+
 .foodbtn {
   background-image: url('../public/images/food.jpg');
   background-position: 50% 60%;
@@ -69,7 +116,6 @@ hr {
 }
 .foods {
   display: flex;
-  padding: 25px 0 50px 0;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -80,7 +126,7 @@ hr {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 10px 0 50px 0;
+  padding: 0px 0 50px 0;
 }
 .bTitle {
   border: 2px solid black;
@@ -158,30 +204,31 @@ hr {
 .item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 20px 20px 0 20px;
+  margin: 20px 20px 0 5px;
   border-radius: 3px;
   text-align: center;
   background-color: white;
   box-shadow: 0 0 8px 0.1px black;
-  height: 390px;
-  width: 300px;
+  height: 21.5rem;
+  width: 17rem;
 }
-.item h1 {
-  margin: 0 0 10px 0;
-  font-size: 32px;
+.item:hover {
+  box-shadow: 0 0 9px 0.3px black;
+}
+.item img {
+  margin-top: 15px;
+  height: 200px;
+  width: 16rem;
 }
 .item hr {
   width: 80%;
 }
 .item p {
+  padding: 0 25px;
   margin-top: 5px;
 }
-.item img {
-  height: 200px;
-  width: 250px;
-}
+
 .item select {
   background-color: white;
   margin-top: 15px;
@@ -271,7 +318,7 @@ select option {
   }
   .images img {
     width: auto;
-    height: 450px;
+    height: 400px;
     margin: 10px 0;
   }
   .ballH {

@@ -4,7 +4,6 @@ const Item = (props) => {
   return (
     <div>
       <div className='item'>
-        <h1>{props.title}</h1>
         <div className='itemImg'>
           <img src={process.env.PUBLIC_URL + '/' + props.image} alt='' />
         </div>

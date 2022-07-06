@@ -117,31 +117,31 @@ const allItems = [
     title: 'Dessert',
     img: 'images/OIP.jpg',
     price: 'Trileqe: 50 MKD',
-    description: '',
+    description: 'Dessert',
   },
   {
     title: 'Dessert',
     img: 'images/OIP.jpg',
     price: 'Snickers: 60 MKD',
-    description: '',
+    description: 'Dessert',
   },
   {
     title: 'Dessert',
     img: 'images/OIP.jpg',
     price: 'Bounty: 60 MKD',
-    description: '',
+    description: 'Dessert',
   },
   {
     title: 'Dessert',
     img: 'images/OIP.jpg',
     price: 'Cheese Cake: 60 MKD',
-    description: '',
+    description: 'Dessert',
   },
   {
     title: 'Dessert',
     img: 'images/OIP.jpg',
     price: 'Bakllava: 40 MKD',
-    description: '',
+    description: 'Dessert',
   },
 ]
 export default allItems

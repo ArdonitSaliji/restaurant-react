@@ -3,6 +3,7 @@ import '../ulqin.css'
 import Item from './Item'
 import allItems from './allItems'
 import Drinks from './Drinks'
+import Choices from './Choices'
 const Main = () => {
   const items = allItems.map((item) => <Item key={item} image={item.img} price={item.price} title={item.title} desc={item.description} />)
   const [container, setContainer] = useState(items)
@@ -23,6 +24,7 @@ const Main = () => {
             <h1>Pije</h1>
           </div>
         </div>
+        <Choices />
       </div>
       <div className={container === items ? 'foods' : 'beverages'}>{container}</div>
     </div>
