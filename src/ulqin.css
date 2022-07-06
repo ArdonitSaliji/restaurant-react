@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background: rgb(0 100 0 / 0.1) !important ; */
 }
 
 body {
@@ -234,7 +235,7 @@ select option {
   justify-content: center;
 }
 .images img {
-  margin: 10px;
+  margin: 10px 0;
   height: 500px;
   width: auto;
 }
@@ -265,7 +266,6 @@ select option {
   .images {
     margin: 0;
     justify-content: center;
-    width: auto;
     padding-bottom: 80px;
   }
   .images img {
