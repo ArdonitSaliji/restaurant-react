@@ -6,14 +6,14 @@ const Header = (props) => {
       <div className='navbar'>
         <div className='ulqinImg'>
           <img src={process.env.PUBLIC_URL + '/images/ulqin1.png'} alt='' />
-          <h1>Veranda Ulqin</h1>
+          <h1>Restaurant</h1>
         </div>
         <FaBars className='bars' />
         <div className='navItems'>
-          <a onClick={props.showBallina}>Ballina</a>
+          <a onClick={props.showHome}>Home</a>
           <a onClick={props.showMenu}>Menu</a>
-          <a onClick={props.showLocation}>Lokacioni</a>
-          <a>Kontakti</a>
+          <a onClick={props.showLocation}>Location</a>
+          <a>Contact</a>
         </div>
       </div>
     </div>

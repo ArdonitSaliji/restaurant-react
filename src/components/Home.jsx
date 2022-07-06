@@ -1,9 +1,9 @@
 import React from 'react'
 import '../ulqin.css'
-const Ballina = () => {
+const Home = () => {
   return (
     <div className='center'>
-      <h1 className='ballH'>Mirsë se erdhët në Veranda Ulqin</h1>
+      <h1 className='ballH'>Welcome to our Restaurant</h1>
       <div className='images'>
         <img src={process.env.PUBLIC_URL + '/images/coktel.jpg'} alt='' />
         <img src={process.env.PUBLIC_URL + '/images/enjoy.jpg'} alt='' />
@@ -14,4 +14,4 @@ const Ballina = () => {
   )
 }
 
-export default Ballina
+export default Home

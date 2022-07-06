@@ -2,22 +2,22 @@ import { useState } from 'react'
 import Header from './components/Header'
 import Main from './components/Main'
 import Location from './components/Location'
-import Ballina from './components/Ballina'
+import Home from './components/Home'
 function App() {
-  const [content, setContent] = useState(<Ballina />)
+  const [content, setContent] = useState(<Home />)
   const showLoc = () => {
     setContent(<Location />)
   }
   const showMenu = () => {
     setContent(<Main />)
   }
-  const showBallina = () => {
-    setContent(<Ballina />)
+  const showHome = () => {
+    setContent(<Home />)
   }
 
   return (
     <div style={{ position: 'relative' }}>
-      <Header showLocation={showLoc} showMenu={showMenu} showBallina={showBallina} />
+      <Header showLocation={showLoc} showMenu={showMenu} showHome={showHome} />
       {content}
       <footer>
         <h2>Copyright © Ulqin 2022</h2>
