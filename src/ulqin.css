@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background: rgb(0 100 0 / 0.1) !important ; */
+  background: rgb(100 / 0.1);
+}
+
+:root {
+  --transition: 400ms all ease-out;
 }
 
 body {
@@ -166,6 +170,7 @@ hr {
 }
 
 .navbar {
+  transition: var(--transition);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -175,6 +180,7 @@ hr {
 }
 
 .navItems a {
+  letter-spacing: 1px;
   font-size: 18px;
   text-decoration: none;
   color: white;
@@ -185,7 +191,8 @@ hr {
   background-color: midnightblue;
 }
 .navItems a:hover {
-  background-color: brown;
+  background-color: rgb(0, 0, 0);
+  transition: var(--transition);
 }
 ::-webkit-scrollbar {
   display: none;
@@ -242,6 +249,7 @@ hr {
   margin-top: 20px;
 }
 footer {
+  z-index: 101;
   display: flex;
   align-items: center;
   position: fixed;
@@ -288,14 +296,87 @@ select option {
   height: 500px;
   width: auto;
 }
+.x {
+  display: none;
+}
+.map-container {
+  height: calc(100vh - 185px);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map {
+  height: 80%;
+  width: 40%;
+}
 @media screen and (max-width: 1024px) {
+  .map {
+    height: 80%;
+    width: 80%;
+  }
   .btns {
     margin: 15px 0;
   }
+  .x {
+    display: flex;
+    justify-content: right;
+  }
   .navItems {
+    margin-right: -100%;
+    position: absolute;
+    right: -100%;
+  }
+  .navItems.active {
+    margin: 0;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    height: 100%;
+    width: 30%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: midnightblue;
+  }
+
+  .navItems.active a {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    background-color: midnightblue;
+  }
+  .navItems a {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    background-color: white;
+  }
+
+  .navItems.active .x {
+    text-align: right;
+    margin-top: 2.2rem;
+    padding: 0 20px;
+  }
+  .navItems.active .x:hover {
+    background: midnightblue;
+  }
+
+  .close {
+    margin-right: 4%;
     display: none;
   }
+  .close.active {
+    padding: 0;
+    font-size: 40px;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+  }
+
   .footer {
+    z-index: 1010;
     position: fixed;
     bottom: 0;
   }
@@ -334,9 +415,17 @@ select option {
     display: inline-block;
   }
 }
-.map {
-  border: none;
-  display: flex;
-  margin-top: 1%;
-  justify-content: center;
+
+@media screen and (max-width: 600px) {
+  .navItems.active {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: midnightblue;
+  }
 }
