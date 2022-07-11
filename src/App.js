@@ -9,10 +9,10 @@ function App() {
     <div style={{ position: 'relative' }}>
       <Header />
       <Routes>
-        <Route path='/home' element={<Home />} />
-        <Route path='/menu' element={<Main />} />
-        <Route path='/location' element={<Location />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='restaurant-react/' element={<Home />} />
+        <Route path='restaurant-react/menu' element={<Main />} />
+        <Route path='restaurant-react/location' element={<Location />} />
+        <Route path='restaurant-react/contact' element={<Contact />} />
       </Routes>
       <footer>
         <h2>Copyright © Restaurant 2022</h2>

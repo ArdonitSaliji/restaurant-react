@@ -15,10 +15,10 @@ const Navbar = (props) => {
         <FaBars className={sidebar ? 'bars active' : 'bars'} onClick={showSidebar} />
         <div className={sidebar ? 'navItems active' : 'navItems'}>
           <ul className='ul'>
-            <CustomLink to='/home'>Home</CustomLink>
-            <CustomLink to='/menu'>Menu</CustomLink>
-            <CustomLink to='/location'>Location</CustomLink>
-            <CustomLink to='/contact'>Contact</CustomLink>
+            <CustomLink to='restaurant-react/'>Home</CustomLink>
+            <CustomLink to='restaurant-react/menu'>Menu</CustomLink>
+            <CustomLink to='restaurant-react/location'>Location</CustomLink>
+            <CustomLink to='restaurant-react/contact'>Contact</CustomLink>
           </ul>
         </div>
       </div>

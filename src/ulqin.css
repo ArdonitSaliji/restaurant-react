@@ -5,6 +5,7 @@
   list-style: none;
   text-decoration: none;
   list-style-type: none;
+  /* background: rgb(0 100 0 / 0.1) !important; */
 }
 
 :root {
@@ -288,7 +289,7 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
-  width: 100%;
+  width: 100vw;
   background-color: black;
   height: 55px;
 }
