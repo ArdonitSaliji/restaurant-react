@@ -15,10 +15,18 @@ const Navbar = (props) => {
         <FaBars className={sidebar ? 'bars active' : 'bars'} onClick={showSidebar} />
         <div className={sidebar ? 'navItems active' : 'navItems'}>
           <ul className='ul'>
-            <CustomLink to='restaurant-react/'>Home</CustomLink>
-            <CustomLink to='restaurant-react/menu'>Menu</CustomLink>
-            <CustomLink to='restaurant-react/location'>Location</CustomLink>
-            <CustomLink to='restaurant-react/contact'>Contact</CustomLink>
+            <CustomLink onClick={() => setSidebar(!sidebar)} to='restaurant-react/'>
+              Home
+            </CustomLink>
+            <CustomLink onClick={() => setSidebar(!sidebar)} to='restaurant-react/menu'>
+              Menu
+            </CustomLink>
+            <CustomLink onClick={() => setSidebar(!sidebar)} to='restaurant-react/location'>
+              Location
+            </CustomLink>
+            <CustomLink onClick={() => setSidebar(!sidebar)} to='restaurant-react/contact'>
+              Contact
+            </CustomLink>
           </ul>
         </div>
       </div>

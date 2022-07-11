@@ -5,6 +5,7 @@
   list-style: none;
   text-decoration: none;
   list-style-type: none;
+
   /* background: rgb(0 100 0 / 0.1) !important; */
 }
 
@@ -193,6 +194,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   height: 110px;
+  overflow: hidden !important;
   padding-bottom: 8px;
   border-bottom: 1px solid black;
 }
@@ -353,18 +355,20 @@ select option {
   .btns {
     margin: 15px 0;
   }
-
+  .btns button {
+    width: 5rem;
+  }
   .navItems {
     transition: var(--transition);
-    visibility: hidden;
-    transform: translateX(100%);
+    visibility: visible;
+    display: flex;
+    transform: translateX(110%);
     overflow: hidden;
     padding: 4.5rem 0 0 0;
-    display: flex;
     flex-direction: column;
     z-index: 100;
     height: 100%;
-    width: 30%;
+    width: 0;
     top: 0;
     right: 0;
     position: absolute;
@@ -411,6 +415,7 @@ select option {
     display: flex;
     justify-content: right;
     padding: 0;
+    transition: var(--transition);
     font-size: 40px;
     text-align: center;
   }
