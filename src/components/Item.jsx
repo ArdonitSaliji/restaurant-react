@@ -8,9 +8,9 @@ const Item = (props) => {
           <img src={process.env.PUBLIC_URL + '/' + props.image} alt='' />
         </div>
 
-        <h3>{props.price}</h3>
+        <h3>Item: Price</h3>
         <hr />
-        <p>{props.desc}</p>
+        <p>Description</p>
       </div>
     </div>
   )

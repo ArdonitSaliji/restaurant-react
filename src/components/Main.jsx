@@ -5,8 +5,14 @@ import allItems from './allItems'
 import Drinks from './Drinks'
 import Choices from './Choices'
 const Main = () => {
-  const items = allItems.map((item) => <Item key={item} image={item.img} price={item.price} title={item.title} desc={item.description} />)
+  const items = allItems.map((item, index) => <Item key={index} image={item.img} price={item.price} title={item.title} desc={item.description} />)
   const [container, setContainer] = useState(items)
+
+  const showAll = (e) => {
+    const filterItems = items.map((it) => it).filter((item) => item.props.title === e.target.innerHTML)
+    setContainer(filterItems)
+  }
+
   const showDrinks = () => {
     setContainer(<Drinks />)
   }
@@ -15,17 +21,7 @@ const Main = () => {
   }
   return (
     <div className='container'>
-      <div>
-        <div className='zgjedhjet'>
-          <div onClick={showFood} className='foodbtn'>
-            <h1>Food</h1>
-          </div>
-          <div onClick={showDrinks} className='drinks'>
-            <h1>Drinks</h1>
-          </div>
-        </div>
-        <Choices />
-      </div>
+      <Choices showItems={items} showAll={showAll} showDrinks={showDrinks} showFood={showFood} />
       <div className={container === items ? 'foods' : 'beverages'}>{container}</div>
     </div>
   )

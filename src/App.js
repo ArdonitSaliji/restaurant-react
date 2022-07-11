@@ -1,24 +1,19 @@
-import { useState } from 'react'
-import Header from './components/Header'
+import Header from './components/Navbar'
 import Main from './components/Main'
 import Location from './components/Location'
 import Home from './components/Home'
+import Contact from './components/Contact'
+import { Route, Routes } from 'react-router-dom'
 function App() {
-  const [content, setContent] = useState(<Home />)
-  const showLoc = () => {
-    setContent(<Location />)
-  }
-  const showMenu = () => {
-    setContent(<Main />)
-  }
-  const showHome = () => {
-    setContent(<Home />)
-  }
-
   return (
     <div style={{ position: 'relative' }}>
-      <Header showLocation={showLoc} showMenu={showMenu} showHome={showHome} />
-      {content}
+      <Header />
+      <Routes>
+        <Route path='/home' element={<Home />} />
+        <Route path='/menu' element={<Main />} />
+        <Route path='/location' element={<Location />} />
+        <Route path='/contact' element={<Contact />} />
+      </Routes>
       <footer>
         <h2>Copyright © Restaurant 2022</h2>
       </footer>
