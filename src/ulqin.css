@@ -94,6 +94,7 @@ hr {
 }
 .foodbtn,
 .drinks {
+  text-shadow: 1px 1px 1px white, -1px -1px 1px white;
   font-size: 12px;
   border-radius: 5px;
   margin: 0 10px;
@@ -143,7 +144,6 @@ hr {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: 40px;
 }
 .beverages {
   display: flex;
